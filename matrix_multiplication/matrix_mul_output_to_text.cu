@@ -107,7 +107,7 @@ __global__ void tiledMatMulKernel(const float* A, const float* B, float* C, int 
 // --- Main Function ---
 int main() {
     std::ofstream outFile;
-    outFile.open("results.txt");
+    outFile.open("results_.txt");
     if (!outFile.is_open()) {
         std::cerr << "Error: Could not open results.txt for writing." << std::endl;
         return EXIT_FAILURE;
@@ -134,7 +134,7 @@ int main() {
     outFile << std::string(135, '-') << std::endl;
 
     // Matrix sizes to test [cite: 9]
-    std::vector<int> matrix_sizes = {64, 128, 250, 512, 1000}; // Example sizes, ensure N >= 4x4
+    std::vector<int> matrix_sizes = {64, 128, 256, 512, 1024}; // Example sizes, ensure N >= 4x4
 
     unsigned int seed = 12345; // For reproducible matrix initialization
 

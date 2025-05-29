@@ -1,0 +1,25 @@
+--- Hardware and Runtime Environment (Partial) ---
+GPU Model: NVIDIA RTX A6000
+Total Global Memory: 48654 MB
+Shared Memory Per Block: 48 KB
+Max Threads Per Block: 1024
+Max Threads Dim: (1024, 1024, 64)
+Max Grid Dim: (2147483647, 65535, 65535)
+Warp Size: 32
+CUDA Runtime Version: 11.3
+CUDA Driver Version: 12.2
+-------------------------------------------------
+
+Performing GPU warmup...
+GPU warmup complete.
+
+Starting Matrix Multiplication Performance Comparison...
+TILE_DIM for Tiled Kernel: 16
+Number of runs for averaging: 20
+
+Matrix Dim  CPU Time(ms)   Naive GPU(ms)     S/N Speedup    Tiled GPU(ms)     S/T Speedup    N/T Speedup    Naive Verify   Tiled Verify   
+---------------------------------------------------------------------------------------------------------------------------------------
+64x64       0.120          0.007             16.965         0.007             18.286         1.078          OK             OK             
+128x128     1.249          0.008             152.492        0.008             154.026        1.010          OK             OK             
+256x256     14.615         0.026             568.094        0.021             711.289        1.252          OK             OK             
+512x512     124.254        0.131             948.431        0.101             1230.994       1.298          OK             OK             

@@ -1,0 +1,50 @@
+행렬 크기: 4x4
+직렬 시간: 5.645e-05 ms
+Naive CUDA 시간: 0.0035152 ms
+Tiled CUDA 시간: 0.003632 ms
+Naive 정확성: 예
+Tiled 정확성: 예
+직렬/Naive 속도 향상: 0.0160588
+직렬/Tiled 속도 향상: 0.0155424
+Naive/Tiled 속도 향상: 0.967841
+
+행렬 크기: 16x16
+직렬 시간: 0.0016849 ms
+Naive CUDA 시간: 0.0037232 ms
+Tiled CUDA 시간: 0.0041248 ms
+Naive 정확성: 예
+Tiled 정확성: 예
+직렬/Naive 속도 향상: 0.452541
+직렬/Tiled 속도 향상: 0.40848
+Naive/Tiled 속도 향상: 0.902638
+
+행렬 크기: 32x32
+직렬 시간: 0.0123267 ms
+Naive CUDA 시간: 0.0043376 ms
+Tiled CUDA 시간: 0.0043728 ms
+Naive 정확성: 예
+Tiled 정확성: 예
+직렬/Naive 속도 향상: 2.84182
+직렬/Tiled 속도 향상: 2.81895
+Naive/Tiled 속도 향상: 0.99195
+
+행렬 크기: 64x64
+직렬 시간: 0.0974624 ms
+Naive CUDA 시간: 0.0054064 ms
+Tiled CUDA 시간: 0.0050928 ms
+Naive 정확성: 예
+Tiled 정확성: 예
+직렬/Naive 속도 향상: 18.0272
+직렬/Tiled 속도 향상: 19.1373
+Naive/Tiled 속도 향상: 1.06158
+
+행렬 크기: 256x256
+직렬 시간: 15.659 ms
+Naive CUDA 시간: 0.0245664 ms
+Tiled CUDA 시간: 0.0201472 ms
+Naive 정확성: 아니오
+Tiled 정확성: 아니오
+직렬/Naive 속도 향상: 637.415
+직렬/Tiled 속도 향상: 777.229
+Naive/Tiled 속도 향상: 1.21935
+
